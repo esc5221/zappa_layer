@@ -125,7 +125,7 @@ def get_django_project_name():
     return None
 
 
-@click.group(
+@colored_group(
     help="Manage layers for zappadock",
 )
 def cli():
@@ -372,7 +372,7 @@ def allinone(context, profile, layer_name, region, project_name):
 
 
 @cli.command(
-    help="Execute all commands, except updatelayer with one command",
+    help="Execute all commands, except updatelayer",
 )
 @click.option("--profile", "-p", help="AWS profile name, defalult: default")
 @click.option("--layer_name", "-l", help="Layer name, default: [project_name]_layer")
