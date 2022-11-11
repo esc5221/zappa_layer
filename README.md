@@ -11,7 +11,7 @@ pip install zappa-layer
 
 ## Usage
 ```
-$ python3 zappa_layer/layer_manage.py -h
+$ layer_manage -h
 Usage: layer_manage.py [OPTIONS] COMMAND [ARGS]...
 
   Manage layers for zappadock
